@@ -1,0 +1,19 @@
+{
+    "name": "@mephistowa/voronoi",
+    "version": "1.0.5",
+    "description": "See original https://github.com/gorhill/Javascript-Voronoi",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "watch": "npx tsc -w",
+        "run": "node ./dist/index.js",
+        "build": "npx tsc && node pack-up.js",
+        "push": "npm run build && npm publish . --access public",
+        "try": "node ./test.js"
+    },
+    "author": "andrew porter <mephisto8335@gmail.com>",
+    "license": "ISC",
+    "devDependencies": {
+        "typescript": "^4.1.2"
+    }
+}
