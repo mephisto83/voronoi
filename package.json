@@ -1,6 +1,6 @@
 {
     "name": "@mephistowa/voronoi",
-    "version": "1.0.5",
+    "version": "1.0.7",
     "description": "See original https://github.com/gorhill/Javascript-Voronoi",
     "main": "index.js",
     "scripts": {

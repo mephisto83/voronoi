@@ -1,8 +1,9 @@
 var Voronoi = require('./dist/voronoi').default
+var Util = require('./dist/util').default
 
 var voronoi = new Voronoi();
-var bbox = {xl: 0, xr: 800, yt: 0, yb: 600}; // xl is x-left, xr is x-right, yt is y-top, and yb is y-bottom
-var sites = [ {x: 200, y: 200}, {x: 50, y: 250}, {x: 400, y: 100} /* , ... */ ];
+var bbox = { xl: 0, xr: 800, yt: 0, yb: 600 }; // xl is x-left, xr is x-right, yt is y-top, and yb is y-bottom
+var sites = [{ x: 200, y: 200 }, { x: 50, y: 250 }, { x: 400, y: 100 } /* , ... */];
 
 // a 'vertex' is an object exhibiting 'x' and 'y' properties. The
 // Voronoi object will add a unique 'voronoiId' property to all
@@ -11,3 +12,9 @@ var sites = [ {x: 200, y: 200}, {x: 50, y: 250}, {x: 400, y: 100} /* , ... */ ];
 
 var diagram = voronoi.compute(sites, bbox);
 console.log(diagram)
+
+console.log(diagram.cells[0])
+console.log('----------------------------------------')
+console.log(diagram.cells[0].halfedges[0].edge)
+console.log('----------')
+console.log(diagram.cells[0].halfedges[1].edge)

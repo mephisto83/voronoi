@@ -34,6 +34,7 @@ export default class Voronoi {
         this.beachline = null;
         this.circleEvents = null;
     }
+    
     reset() {
         if (!this.beachline) {
             this.beachline = new RBTree();
